@@ -1,0 +1,10 @@
+<mat-card >
+<h1><u><b>Hire SkillPersons</b></u></h1>
+
+<mat-card class="w100" *ngFor="let s of skillPersons">
+    <p class="left"><b>{{s.userName}} : </b> 
+       
+        <span class="ml20 ml20">{{s.skill}}</span>
+        <span class="ml90"><button routerLink="/login" mat-raised-button color="primary">Hire</button></span></p>
+  </mat-card>
+</mat-card>

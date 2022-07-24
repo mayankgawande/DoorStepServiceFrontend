@@ -1,0 +1,15 @@
+.left{
+    text-align: left;
+}
+.ml90{
+    margin-left: 80%;
+}
+.ml60{
+    margin-left: 60%;
+}
+.padleft{
+   align-items: initial;
+}
+.maxheight{
+    max-height: 100%;
+}

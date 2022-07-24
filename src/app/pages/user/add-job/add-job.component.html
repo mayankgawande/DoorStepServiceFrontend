@@ -1,0 +1,55 @@
+<mat-card>
+    <h1>Add New Job</h1>
+    <mat-card-content>
+   
+           
+         <div class="bootstrap-wrapper">
+             <div class="row">
+                 <div class="col-md-10 offset-md-2">
+                    <form (ngSubmit)="addJob()">
+                        
+                           
+                      <mat-form-field class="w100" appearance="outline">
+                        <mat-label>JobTitle</mat-label>
+                        <input 
+                        required
+                        autofocus type="text" name="title" matInput
+                        placeholder="Enter here"
+                        [(ngModel)]="job.jobTitle">
+                    </mat-form-field>
+                    <br>
+
+
+                              <mat-form-field class="mt20 w100" appearance="fill">
+                                <mat-label>SkillRequired</mat-label>
+                                <mat-select name="skill" [(ngModel)]="job.subCategory">
+                                  <mat-option *ngFor="let c of subcategories" [value]="c">
+                                    {{c.title}}
+                                  </mat-option>
+                                </mat-select>
+                              </mat-form-field>
+                              <br>
+                             
+                       
+
+                         <mat-form-field class="w100" appearance="outline">
+                             <textarea name="description"
+                             matInput
+                             placeholder="Enter Category Description"
+                             [(ngModel)]="job.description"
+                             rows="15"
+                              ></textarea>
+                            </mat-form-field>
+                            <br>
+                        
+                         <div class="container text-centre mt15">
+                             <button mat-raised-button color="primary">Add</button>
+                         </div>
+                      </form>
+
+                 </div>
+             </div>
+         </div>
+    </mat-card-content>
+</mat-card>
+{{job|json}}

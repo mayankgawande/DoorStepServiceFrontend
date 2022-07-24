@@ -1,0 +1,22 @@
+<mat-card class="mt10 left " *ngFor="let s of aplliers">
+    <mat-card-header>
+        
+        <mat-card-title>
+            {{s.username}}
+        </mat-card-title>
+        
+    </mat-card-header>
+    <mat-card-content class="ml20">
+        <p>{{s.status}}</p>
+    </mat-card-content>
+    <mat-card-actions class='ml10'>
+        
+        <button 
+        
+        mat-flat-button color="primary" class ="ml10"
+       (click)="hire(s)">Hire</button>
+
+    </mat-card-actions>
+</mat-card>
+
+

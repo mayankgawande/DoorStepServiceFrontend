@@ -1,0 +1,11 @@
+.full-width{
+    width:47%;
+}
+.ml40{
+    margin-left: 40px;
+}
+.image{
+    background-image: url("../../../assets/projectbackground.jpg");
+    height:100%;
+   
+}

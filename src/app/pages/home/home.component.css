@@ -1,0 +1,11 @@
+.image{
+    background-image: url("../../../assets/projectbackground.jpg");
+    height:105%;
+   
+}
+.ex1 {
+    overflow: hidden;
+    
+    height: 725px;
+    width:100%;
+  }

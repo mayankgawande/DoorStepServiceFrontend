@@ -1,0 +1,40 @@
+<mat-card>
+        <div class="bootstrap-wrapper">
+        <div class="row">
+        <div class="col-md-10 offset-md-2">
+            
+           <form (ngSubmit)="register()">
+            <mat-form-field class="mt20 w100" appearance="fill">
+                <mat-label>Skill</mat-label>
+                <mat-select name="skill" [(ngModel)]="skillperson.skill">
+                  <mat-option *ngFor="let c of subcategory" [value]="c.title">
+                    {{c.title}}
+                  </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+
+                <mat-form-field class="w100" appearance="outline">
+                    <textarea name="description"
+                    matInput
+                    placeholder="Describe Your Skills"
+                    [(ngModel)]="skillperson.description"
+                    rows="15"
+                     ></textarea>
+                </mat-form-field>
+                <br>
+                <div class="container text-centre mt15">
+                    <button mat-raised-button color="primary">Add</button>
+                </div>
+             </form>
+           
+
+        </div>
+    </div>
+</div>
+</mat-card>
+
+
+
+
+

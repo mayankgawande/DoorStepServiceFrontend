@@ -1,0 +1,15 @@
+.ex1 {
+    overflow: hidden;
+    
+    height: 725px;
+    width:100%;
+  }
+  .image{
+    background-image: url("../../../../assets/projectbackground.jpg");
+    height:auto;
+    
+    
+}
+.left{
+  text-align: left;
+}

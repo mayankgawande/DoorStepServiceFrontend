@@ -1,0 +1,38 @@
+<mat-card>
+   
+    
+      
+        <form (ngSubmit)="done()">
+          <h3>How much you rate us</h3>
+            <mat-form-field class="mt20 w100" appearance="fill">
+                <mat-label>rating</mat-label>
+                <mat-select name="rating1" [(ngModel)]="rating1">
+                  <mat-option *ngFor="let c of rating"[value]="c">
+                    {{c}}
+                  </mat-option>
+                </mat-select>
+               
+             </mat-form-field>
+             <h3>How much you rate our skillperson</h3>
+             <mat-form-field class="mt20 w100" appearance="fill">
+             
+                <mat-label>Rating</mat-label>
+                <mat-select name="rating2" [(ngModel)]="rating2">
+                  <mat-option *ngFor="let c of rating"[value]="c">
+                    {{c}}
+                  </mat-option>
+                </mat-select>
+               
+             </mat-form-field>
+             <div class="container text-centre">
+              <button mat-raised-button color="primary" type="submit">Done</button>
+          
+             
+             </div>
+
+
+
+    </form>
+
+  </mat-card>
+

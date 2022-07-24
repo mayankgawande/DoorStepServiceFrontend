@@ -1,0 +1,17 @@
+
+<mat-card class="mt10 " *ngFor="let s of jobs">
+    <mat-card-header>
+      
+        <mat-card-title>
+            {{s.jobTitle}}
+        </mat-card-title>
+        
+    </mat-card-header>
+    <mat-card-content class="ml20">
+        <p>{{s.description}}</p>
+        <p>Employer: {{s.username}} <span class="ml50"></span> PhoneNo : {{s.phone}}<span class="ml50"></span> Address : {{s.address}}</p>
+        
+    </mat-card-content>
+ 
+</mat-card>
+

@@ -1,0 +1,31 @@
+
+<mat-card >
+<h1><u><b>Jobs Available</b></u></h1>
+ 
+<mat-card  *ngFor="let s of jobs">
+    <p class="left"><b>{{s.jobTitle}} : </b> 
+        <span>{{s.description}}</span>
+        <span class="ml90"><button routerLink="/login"mat-raised-button color="primary">Apply</button></span></p>
+    
+
+</mat-card>
+</mat-card>
+
+<!--<mat-card>
+<table >
+    <tr>
+        <th>jId</th>
+        <th>jobTitle</th>
+        <th>description</th>
+    </tr>
+    <tr *ngFor="let s of jobs">
+        <td>{{s.jId}}</td>
+        <td>{{s.jobTitle}}</td>
+        <td>{{s.description}}</td>
+    </tr>
+</table>
+</mat-card>
+-->
+  
+
+

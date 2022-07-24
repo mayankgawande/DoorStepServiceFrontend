@@ -1,0 +1,103 @@
+<!--
+<div class="image">
+
+<div class="bootstrap-wrapper ">
+    <div class="container ">
+        <div class="row ">
+            
+            <div class="col-md-6  offset-md-3 text-centre ">
+              
+               <h1><b><u>Welcome To DoorStepService</u>
+                </b></h1>
+               
+            
+                
+               
+            </div>
+        
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-centre ">
+                <app-homejobs></app-homejobs>
+            </div>
+            <div class="col-md-6 text-centre ">
+                <app-homeperson></app-homeperson>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+</div>-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.left {
+  
+  padding: 20px;
+  float: left;
+  width: 50%; /* The width is 20%, by default */
+}
+
+.main {
+  padding: 20px;
+  float: left;
+  width: 50% /* The width is 60%, by default */
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+</style>
+</head>
+<body>
+    <div class="image">
+        <div class="col-md-6  offset-md-3 text-centre ">
+              
+            <h1><b><u>Welcome To DoorStepService</u>
+             </b></h1>
+             </div>
+
+<div class="left ex1">
+  <app-homejobs></app-homejobs>
+</div>
+
+<div class="main ex1">
+    <app-homeperson></app-homeperson>
+</div>
+
+
+</div>
+</body>
+</html>
